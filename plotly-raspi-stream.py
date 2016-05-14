@@ -3,9 +3,9 @@ from plotly.graph_objs import Scatter, Layout, Figure
 import time
 import readadc
 
-username = 'your_plotly_username'
-api_key = 'your_api_key'
-stream_token = 'your_stream_token'
+username = 'toanbeokt'
+api_key = 'wi8sa6o7cs'
+stream_token = '2vetdxljbx'
 
 py.sign_in(username, api_key)
 
@@ -27,11 +27,9 @@ fig = Figure(data=[trace1], layout=layout)
 print py.plot(fig, filename='Raspberry Pi Streaming Example Values')
 
 # temperature sensor connected channel 0 of mcp3008
-sensor_pin = 0
-readadc.initialize()
+audio_level=0
 
-i = 0
-stream = py.Stream(stream_token)
+stream = py.Stream(stream_token)s
 stream.open()
 
 #the main sensor reading loop
